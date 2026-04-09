@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrunePlume - First eCommerce Website</title>
+
+    <!--Linking css file-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-------Top Nav-------->
+    <div class="top_nav">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrap">
+                <p class="top_nav_p">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-------Main Nav-------->
+    <nav class="nav" aria-label="nav">
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo">VeriMediRX</a>
+            <ul class="display_flex">
+                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="sign_up.html" class="nav_link">Sign Up</a></li>
+                <li class="nav_item"><a href="cart.html" class="nav_link"> <i class="fa-solid fa-cart-shopping" class="cart"></i>Cart</a></li>  
+            </ul>
+        </div>
+    </nav>
+
+    <!-------Mobile Nav-------->
+    <nav class="mob_nav mob_hidden" aria-label="mob_nav">
+        <ul class="mob_list">
+            <li class="mob_item">
+                <a href="/" class="mob_link">Home</a>
+            </li>
+            <li class="mob_item">
+                <a href="#" class="mob_link">About Us</a>
+            </li>
+            <li class="mob_item">
+                <a href="#" class="mob_link">Contact</a>
+            </li>
+            <li class="mob_item">
+                <a href="signup.html" class="mob_link">Sign Up</a>
+            </li>      
+            <li class="mob_item">
+                <a href="cart.html" class="mob_link">Cart</a>
+            </li>      
+        </ul>
+    </nav>
+
+    <!-- --- Cart--- -->
+    <section class="container">
+          <div class="width_100">
+            <div class="order_table_title">
+              <p>Product ID</p>
+              <p>Product Title</p>
+              <p>Product Image</p>
+              <p>Price</p>
+              <p>Delete</p>
+            </div>
+            <div class="order_table-item">
+                <div class="order_table_item">
+                    <p>${item.id}</p>
+                    <p>${item.title}</p>
+                    <img src="${item.image}" alt="${item.title}" class="order_item_img" />
+                    <p>${item.price}</p>
+                    <p>Delete</p>
+                </div>
+                <div class="order_table_item">test_row</div>
+            </div>
+            <div class="total_cost">Total: ₹900</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_items">
+                <h3 class="footer_title">Know Us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Your Account</li>
+                    <li class="li footer_itm">Your Orders</li>
+                    <li class="li footer_itm">문의</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Support</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">VeriMediRX .LLC</li>
+                    <li class="li footer_itm">unishop@gmail.com</li>
+                    <li class="li footer_itm">+82 3669578123</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Earn for us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Run ads on Product</li>
+                    <li class="li footer_itm">See More Make Money with Us</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Help</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Services</li>
+                    <li class="li footer_itm">Policies</li>
+                    <li class="li footer_itm">Shipping Rates</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container bottom_container">
+                <p class="copyright">
+                    © Copyright VeriMediRX 2026. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Linking JS file-->
+    <script src="./main.js"></script>
+    <script src="./cart.js"></script>
+</body>
+</html>
