@@ -5,78 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrunePlume - First eCommerce Website</title>
 
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
     <!--Linking css file-->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-    <!-------Top Nav-------->
+    <!-------Top Navigation-------->
     <div class="top_nav">
         <div class="container top_nav_container">
             <div class="top_nav_wrap">
-                <p class="top_nav_p">
-                </p>
+            <p class="top_nav_p">
+            </p>
             </div>
         </div>
     </div>
 
-    <!-------Main Nav-------->
+    <!-------Main Navigation-------->
     <nav class="nav" aria-label="nav">
-        <div class="container nav_container">
+        <div class="container nav_container display_flex">
             <a href="index.html" class="nav_logo">VeriMediRX</a>
             <ul class="display_flex">
                 <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
                 <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
                 <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
-                <li class="nav_item"><a href="sign_up.html" class="nav_link">Sign Up</a></li>
-                <li class="nav_item"><a href="cart.html" class="nav_link"> <i class="fa-solid fa-cart-shopping" class="cart"></i>Cart</a></li>  
+                <li class="nav_item" id="user_id"><a href="sign_up.html" class="nav_link">Sign Uphtml</a></li>
+                <li class="nav_item"><a href="cart.html" class="nav_link">Cart</a></li>
             </ul>
         </div>
     </nav>
 
     <!-------Mobile Nav-------->
-    <nav class="mob_nav mob_hidden" aria-label="mob_nav">
+    <nav class="mob_nav display_none" aria-label="mob_nav">
         <ul class="mob_list">
-            <li class="mob_item">
-                <a href="/" class="mob_link">Home</a>
-            </li>
-            <li class="mob_item">
-                <a href="#" class="mob_link">About Us</a>
-            </li>
-            <li class="mob_item">
-                <a href="#" class="mob_link">Contact</a>
-            </li>
-            <li class="mob_item">
-                <a href="signup.html" class="mob_link">Sign Up</a>
-            </li>      
-            <li class="mob_item">
-                <a href="cart.html" class="mob_link">Cart</a>
-            </li>      
+            <li class="mob_item"><a href="index.html" class="mob_link">Home</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">About Us</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">Contact</a></li>
+            <li class="mob_item"><a href="sign_up.html" class="mob_link">Sign Up mob</a></li>
+            <li class="mob_item"><a href="cart.html" class="mob_link">Cart</a></li>
         </ul>
+        
     </nav>
 
     <!-- --- Cart--- -->
     <section class="container">
-          <div class="width_100">
+        <div class="width_100 cart">
             <div class="order_table_title">
-              <p>Product ID</p>
               <p>Product Title</p>
               <p>Product Image</p>
+              <p>Product Quantity</p>
               <p>Price</p>
               <p>Delete</p>
             </div>
             <div class="order_table-item">
-                <div class="order_table_item">
-                    <p>${item.id}</p>
-                    <p>${item.title}</p>
-                    <img src="${item.image}" alt="${item.title}" class="order_item_img" />
-                    <p>${item.price}</p>
-                    <p>Delete</p>
-                </div>
-                <div class="order_table_item">test_row</div>
+                <div class="order_table_item">test_row</div></div>
             </div>
-            <div class="total_cost">Total: ₹900</div>
+            <div class="cart_total float_right">Total: ₹900 test</div>
+            <button class="add_cart float_right"onclick="check_out()"> Check out </button>
         </div>
     </section>
 
@@ -125,7 +113,8 @@
     </footer>
 
     <!--Linking JS file-->
-    <script src="./main.js"></script>
     <script src="./cart.js"></script>
+    <script src="./index.js"></script>
+
 </body>
 </html>

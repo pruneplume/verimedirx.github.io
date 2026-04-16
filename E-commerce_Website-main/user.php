@@ -1,4 +1,6 @@
-$_SESSION[ 'user_id']
+
+
+_SESSION[ 'user_id']
 $_SESSION[ 'user_number']
 $_SESSION[ 'valid']
 

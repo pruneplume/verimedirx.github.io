@@ -5,7 +5,6 @@ $dbname = "database";
 $username = "super";
 $pw = "postgres";
 
-
 //<!----connect Database---->
 $DB_connection = pg_connect($hostname, $port, $dbname, "postgres", $pw)
 or die('Could not connect: ' . pg_last_error() );
@@ -19,8 +18,4 @@ if ($DBstat === PGSQL_CONNECTION_OK) {
     echo 'Connection status bad';
 }
 
-$_SESSION["test1"] = "userconnect";
-$_COOKIE["test2"] = "cookieconnect";
-
-
-?>
+session_start();

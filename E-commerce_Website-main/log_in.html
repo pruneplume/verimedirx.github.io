@@ -8,6 +8,9 @@
     <!--Linking css file-->
     <link rel="stylesheet" href="style.css">
 
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
 
@@ -23,7 +26,7 @@
 
     <!-------Main Nav-------->
     <nav class="nav" aria-label="nav">
-        <div class="container nav_container">
+        <div class="container nav_container display_flex">
             <a href="index.html" class="nav_logo">VeriMediRX</a>
             <ul class="display_flex">
                 <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
@@ -36,29 +39,19 @@
     </nav>
     
     <!-------Mobile Nav-------->
-    <nav class="mob_nav mob_hidden" aria-label="mob_nav">
+    <nav class="mob_nav display_none" aria-label="mob_nav">
         <ul class="mob_list">
-            <li class="mob_item">
-                <a href="index.html" class="mob_link">Home</a>
-            </li>
-            <li class="mob_item">
-                <a href="#" class="mob_link">About Us</a>
-            </li>
-            <li class="mob_item">
-                <a href="#" class="mob_link">Contact</a>
-            </li>
-            <li class="mob_item">
-                <a href="sign_up.html" class="mob_link">Sign Up</a>
-            </li>      
-            <li class="mob_item">
-                <a href="cart.html" class="mob_link">Cart</a>
-            </li>      
+            <li class="mob_item"><a href="index.html" class="mob_link">Home</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">About Us</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">Contact</a></li>
+            <li class="mob_item"><a href="sign_up.html" class="mob_link">Sign Up</a></li>      
+            <li class="mob_item"><a href="cart.html" class="mob_link">Cart</a></li>      
         </ul>
     </nav>
 
     <!----- Log In ----->
     <section class="margin_top_10 autherization">
-        <form class="width_50" method="post" action="log_in.php">
+        <form class="width_50 padding_12rem" method="post" action="log_in.js" name="log_in">
             <h2 class="user_title">Login to your account</h2>
             <p class="user_subtitle">Enter your correct details only</p>
             <div class="input_place">
