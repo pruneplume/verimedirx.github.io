@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrunePlume - First eCommerce Website</title>
+
+    <!--Linking css file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-------Top Nav-------->
+    <div class="top_nav">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrap">
+                <p class="top_nav_p">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-------Main Nav-------->
+    <nav class="nav" aria-label="nav">
+        <div class="container nav_container display_flex">
+            <a href="index.html" class="nav_logo">VeriMediRX</a>
+            <ul class="display_flex">
+                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">About Us</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+                <li class="nav_item"><a href="sign_up.html" class="nav_link">Sign Up</a></li>
+                <li class="nav_item"><a href="cart.html" class="nav_link"> <i class="fa-solid fa-cart-shopping" class="cart"></i>Cart</a></li>  
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-------Mobile Nav-------->
+    <nav class="mob_nav display_none" aria-label="mob_nav">
+        <ul class="mob_list">
+            <li class="mob_item"><a href="index.html" class="mob_link">Home</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">About Us</a></li>
+            <li class="mob_item"><a href="#" class="mob_link">Contact</a></li>
+            <li class="mob_item"><a href="sign_up.html" class="mob_link">Sign Up mob</a></li>
+            <li class="mob_item"><a href="cart.html" class="mob_link">Cart</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- Product Detail -->
+    <section class="section_products display_flex" id="section_products">
+        <!-- Single Product Image -->
+        <div class="products_image_set">
+            <img src="Swiper items/01.jpg" alt="P-1" width="100%" id="mainImg">
+
+            <div class="products_image_smalls display_flex">
+                <div class="products_image_rows">
+                    <img class="width_100 products_image_selector" src="Swiper items/02.jpg" alt="P-1">
+                </div>
+                <div class="products_image_rows">
+                    <img class="width_100 products_image_selector" src="Swiper items/03.jpeg" alt="P-2">
+                </div>
+                <div class="products_image_rows">
+                    <img class="width_100 products_image_selector" src="Swiper items/04.jpeg" alt="P-3">
+                </div>
+                <div class="products_image_rows">
+                    <img class="width_100 products_image_selector" src="Swiper items/05.jpeg" alt="P-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Product Detail -->
+        <div class="padding_top_30px width_50">
+            <h5>Home / Health</h5>
+            <h2 class="padding_top_30px">Dutasteride</h2>
+            <h1 class="padding_top_30px padding_bot_20px">78,000원</h1>
+            <select class="order_options">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>Medium</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input class="add_quantity" id = "order_quantity" type="number" value="1">
+            <button class="add_cart_2" 
+            product_number="631136" 
+            product_name="Dutasteride" 
+            product_image="Swiper items/01.jpg" 
+            product_price="78,000" > Add to cart </button>
+            <h2 class="padding_top_30px">Product Details</h4>
+            <span class="line_height_25px" id="products_detail">This stylish men's fashion t-shirt boasts a modern and sleek design, perfect for the contemporary
+                urban wardrobe.The unique graphic print on the front adds an eye-catching element to elevate any casual
+                outfit.
+            </span>
+        </div>
+
+    </section>
+
+    
+
+    <!-- Services -->
+    <section class="section">
+        <div class="container official_services" >
+            <div class="service">
+                <i class="fa-solid fa-truck-fast fa-3x" style="color: #000000;" class="img_service"></i>
+                <h3 class="title_service">FREE DELIVERY</h3>
+                <p class="p_service">Free Delivery for all orders</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-handshake fa-3x" style="color: #000000;" class="img_service"></i>
+                <h3 class="title_service"> BEST CUSTOMER SUPPORT</h3>
+                <p class="p_service">Friendly Customer Service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_items">
+                <h3 class="footer_title">Know Us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Your Account</li>
+                    <li class="li footer_itm">Your Orders</li>
+                    <li class="li footer_itm">문의</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Support</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">VeriMediRX .LLC</li>
+                    <li class="li footer_itm">unishop@gmail.com</li>
+                    <li class="li footer_itm">+82 3669578123</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Earn for us</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Run ads on Product</li>
+                    <li class="li footer_itm">See More Make Money with Us</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <h3 class="footer_title">Help</h3>
+                <ul class="footer_list">
+                    <li class="li footer_itm">Services</li>
+                    <li class="li footer_itm">Policies</li>
+                    <li class="li footer_itm">Shipping Rates</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container bottom_container">
+                <p class="copyright">
+                    © Copyright VeriMediRX 2026. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Linking JS file-->
+    <script src="./index.js"></script>
+    <script src="./product_detail.js"></script>
+
+</body>
+</html>
