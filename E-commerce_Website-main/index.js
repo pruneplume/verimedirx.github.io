@@ -27,10 +27,11 @@ AddCart.forEach((button) => {
     const product_name = button.getAttribute("product_name");
     const product_image = button.getAttribute("product_image");
     const product_price= button.getAttribute("product_price");
-    const add_quantity = quantity[0].value || 1;;
+    const add_quantity = 1;
     const cart_item = {product_number,product_name,product_image,product_price, quantity: add_quantity};
-    const cart = JSON.parse(localStorage.getItem('cart_temp')) || null;
-    cart.push(cart_item);
-    localStorage.setItem("cart_temp",JSON.stringify(cart));
+
+    const cart_set = JSON.parse(localStorage.getItem("cart_temp")) || [];
+    cart_set.push(cart_item);
+    localStorage.setItem("cart_temp",JSON.stringify(cart_set));
   });
 });

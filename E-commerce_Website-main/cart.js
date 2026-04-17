@@ -1,26 +1,30 @@
 
-const cart = JSON.parse(localStorage.getItem("cart_temp")) || [];
+
+let cart = JSON.parse(localStorage.getItem("cart_temp")) || [];
 let cartTotal = 0;
+let count = 0;
 
 function displayCartItems() {
 
   const CartItems = document.querySelector(".order_table-item");
+  count = 0;
 
   CartItems.innerHTML = "";
   
-  if (cart.item == null ) {
+  if (cart.length == null ) {
     CartItems.innerHTML = "<p class=\"order_table_item\">Your cart is empty.</p>";
   } else {
     cart.forEach((item) => {
+      count += 1;
       const cartItem = document.createElement("div");
       cartItem.className = "order_table_item";
       cartItem.innerHTML = `
-      <p class="product_number">${item.product_number}</p>
+      <p class="">${count}</p>
       <p class="product_name">${item.product_name}</p>
       <img src="${item.product_image}" alt="${item.product_name}" class="order_item_img" />
       <p class="">${item.quantity}</p>
       <p class="product_price">${item.product_price}</p>
-      <p class="cart_delete">Delete</p>
+      <button class="cart_delete add_cart_2" onclick="deleteCartItem(${cart.indexOf(item)})">Delete</button>
       `;
       CartItems.appendChild(cartItem);
       cartTotal += item.product_price * item.quantity;
@@ -69,4 +73,10 @@ function check_out() {
   })
   .catch(error => console.error( 'cart fetch Error:', error));
 
+}
+
+function deleteCartItem(index) {
+  cart.splice(index, 1);
+  localStorage.setItem("cart_temp", JSON.stringify(cart));
+  displayCartItems();
 }
